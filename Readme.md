@@ -55,4 +55,4 @@ https://github.com/theonlykmac200/tenndr
 
 code graveyard includes snippets of code that I depreciated throughout the project build the build and testing, that provides a path a things I've already tried when working through issues.
 
-
+![ERD]](public/img/ERD.png)
