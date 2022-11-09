@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tenndr:Be Tenndr With Yourself</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        margin: 50px 100px;
+        background-color: rgb(2, 76, 2);
+        color: white;
+      }
+      .row {
+        margin: 0 auto;
+        width: 40%;
+      }
+      h1{
+        margin: center;
+        text-align: center;
+        font-size: 35px;
+      }
+      .notes-box{
+        width: 500px;
+        height: 200px;
+      }
+      button, a {
+        text-decoration-style: none;
+        color: white;
+        text-shadow: .1em .1em .0em black;
+    
+    }
+    </style>
+  
+</head>
+<body>
+
+  <div class="logo-container">
+    <img src="/img/tenndr_logo.png" alt="logo" height="100px" width="200px"/>
+  </div>
+        <h1>New Workout</h1>
+        <div class="new-tenndr-container">
+            <div class="row">
+                <form action="/tenndr" method="POST">
+                    <div class="input-field">
+                        <span class="bolded">Workout Focus</span><input type="text" name="workout"/></br>
+                        <span class="bolded">Sets</span><input type="text" name="sets"/></br>
+                        <span class="bolded">Reps</span><input type="text" name="reps"/></br>
+                        <span class="bolded">Difficulty</span><input type="text" name="difficulty" /></br>
+                        <span class="bolded">Duration</span><input type="text" name="duration_in_mins" /></br>
+                        <span class="bolded">Mood before</span><input type="text" name="mood_before"/></br>
+                        <span class="bolded">Mood after</span><input type="text" name="mood_after"/></br>
+                        <span class="bolded">Notes:</span><textarea name="description"></textarea><br />
+                    
+                    <input class="waves-effect amber waves-light btn" type="submit" name="" value="Add Workout"/>
+                </form>  
+                    <button class="waves-effect amber waves-light btn"><a href="/tenndr">Go Home</a></button>
+                    <form class="waves-effect amber waves-light btn" action="/sessions?_method=DELETE" method="POST">
+                        <input type="submit" value="Log Out" />
+                    </form>
+            </div>
+        </div>
+
+
+    </body>

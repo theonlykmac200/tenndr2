@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tenndr:Be Tenndr With Yourself</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      margin: 50px 100px;
+      background-color: rgb(2, 76, 2);
+      color: white;
+    }
+    .row {
+      margin: 0 auto;
+      width: 20%;
+    }
+    h1{
+      margin: center;
+      text-align: center;
+      font-size: 35px;
+    }
+  </style>
+
+</head>
+
+<body class="user">
+  <div class="logo-container">
+    <img src="/img/tenndr_logo.png" alt="logo" height="100px" width="200px"/>
+  </div>
+
+  <div>
+    <h1>Register A New Account</h1>
+  </div>
+  <div class="row">
+    <div class="input-field">
+      <form action="/users" method="POST">
+        <label for="username">Username</label>
+        <input type="text" name="username" /></br>
+    
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" /></br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" /></br>
+        <label for="First_name">First name:</label>
+        <input type="text" name="First_name" id="First_name" /></br>
+        <label for="Last_name">Last name:</label>
+        <input type="text" name="Last_name" id="Last_name" /></br>
+    
+        <input class ="waves-effect amber waves-light btn" type="submit" value="Register" />
+      </form>
+      <h6>Already have an account?</h6>
+      <button class ="waves-effect amber waves-light btn"><a href="/sessions/new">Login</a></button>
+    </div>
+  </div>
+  
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      margin: 50px 100px;
+      background-color: rgb(2, 76, 2);
+      color: white;
+    }
+    .row {
+      margin: 0 auto;
+      width: 20%;
+    }
+    h1 {
+      margin: center;
+      text-align: center;
+      font-size: 35px;
+    }
+    form, a, button{
+      margin-top: 3px;
+    }
+    button, a, input {
+        text-decoration-style: none;
+        color: white;
+        text-shadow: .1em .1em .0em black;
+    
+    }
+    thead, tbody{
+        text-align: center;
+        color: orange
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo-container">
+    <img src="/img/tenndr_logo.png" alt="logo" height="100px" width="200px" />
+  </div>
+  <h1>
+    <%=tenndr.workout%> Workout
+  </h1>
+  <div class="container">
+    <div id="table-container">
+      <table class="highlight">
+        <thead class="centered">
+          <tr>
+            <th>Workout</th>
+            <th>Sets</th>
+            <th>Reps</th>
+            <th>Duration in Minutes</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody class="z-depth-2">
+          <tr class="centered">
+            <td>
+              <%=tenndr.workout%>
+            </td>
+            <td>
+              <%=tenndr.sets%>
+            </td>
+            <td>
+              <%=tenndr.reps%>
+            </td>
+            <td>
+              <%=tenndr.duration_in_mins%>
+            </td>
+            <td>
+              <%=tenndr.description%>
+            </td>
+        </tbody>
+      </table>
+        <a class="waves-effect amber waves-light btn" href="/tenndr/<%=tenndr._id%>/edit"><span
+          >Edit</span></a>
+        <form class="waves-effect amber waves-light btn" action="/tenndr/<%=tenndr._id%>?_method=DELETE" method="POST">
+          <input type="submit" name="" value="Delete" />
+        </form>
+        <button class="waves-effect amber waves-light btn"><a href="/tenndr">Go Home</a></button>
+        <form class="waves-effect amber waves-light btn" action="/sessions?_method=DELETE" method="POST">
+          <input type="submit" value="Log Out" />
+      </form>
+    </div>
+  </div>
+
+
+
+  </div>
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
+

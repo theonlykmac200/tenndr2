@@ -1,0 +1,25 @@
+
+
+body {
+    margin: 50px 100px;
+  
+  }
+  body, .user {
+    background-color: rgb(2, 76, 2);
+    color: white;
+  }
+  .index-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+  }
+  
+  .hero {
+    width: 100%;
+    grid-column: 1 / -1;
+  }
+  .yellow {
+    color: rgb(255, 255, 0);
+  }

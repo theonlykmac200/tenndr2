@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tenndr:Be Tenndr With Yourself</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        margin: 50px 100px;
+        background-color: rgb(2, 76, 2);
+        color: white;
+      }
+      .row {
+        margin: 0 auto;
+        width: 40%;
+      }
+      h1{
+        margin: center;
+        text-align: center;
+        font-size: 35px;
+      }
+      
+      button, a, input {
+        text-decoration-style: none;
+        color: white;
+        text-shadow: .1em .1em .0em black;
+    
+    }
+    </style>
+  
+</head>
+
+<body>
+  <div class="logo-container">
+    <img src="/img/tenndr_logo.png" alt="logo" height="100px" width="200px"/>
+  </div>
+    <h1>
+        Edit this workout
+    </h1>
+    <div class="row">
+        <form action="/tenndr/<%=tenndr._id%>?_method=PUT" method="POST">
+            <label for="workout">Workout Focus Area:</label>
+            <input type="text" name="workout" value="<%=tenndr.workout%>" />
+            <label for="duration">Duration:</label>
+            <input type="text" name="duration_in_mins" value="<%=tenndr.duration_in_mins%>" />
+            <label for="mood_before">Mood Before:</label>
+            <input type="text" name="mood_before" value="<%=tenndr.mood_before%>" />
+            <label for="mood_after">Mood After:</label>
+            <input type="text" name="mood_after" value="<%=tenndr.mood_after%>" />
+            <label for="description">Notes:</label>
+            <textarea name="description"><%=tenndr.description%></textarea>
+            <input class ="waves-effect amber waves-light btn" type="submit" name="" value="Update" />
+        </form>
+        <button class ="waves-effect amber waves-light btn"><a href="/tenndr">Go Home</a></button>
+    <form action="/sessions?_method=DELETE" method="POST">
+        <input class ="waves-effect amber waves-light btn" type="submit" value="Log Out" />
+    </form>
+    </div>
+    
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
+
