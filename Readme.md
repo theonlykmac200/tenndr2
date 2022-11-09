@@ -22,10 +22,37 @@ The project is planned to be built out in tiers starting with Fitness and mood t
 ![New Entry](public/img/new%20Entry.png)
 
 *Edit Entry*
-![Edit Entries](public/img/Edit.png)
+![Edit](public/img/edit.png)
 
 *Indivdual Entry*
 ![show page](public/img/Indivdual%20Entry%20page.png)
 
 *Delete*
 ![Deleted Page leads to dashboard](public/img/Delete.png)
+
+
+**Technologies Used:**
+Javascript, CSS, EJS, Express, Node.js, Mongodb
+
+**Getting Started:**
+Just a few simple steps to get going:
+Create an account
+Log in
+Begin tracking your workouts. 
+
+**Roadmap**
+
+New Modules will be Mood Tracking and Journaling schemas
+An introdcution of an API offering daily writing prompts and affirmations.
+Incorporation of a workout API to deliver fitness plans and suggested workout
+A Sleep tracking component. 
+Additional features post prodcut market fit would include challenges, team tracking and reward components for gamification of the product.
+
+Specific User Stories can be found in the github project page.
+
+Previous respository and commits can be found at 
+https://github.com/theonlykmac200/tenndr
+
+code graveyard includes snippets of code that I depreciated throughout the project build the build and testing, that provides a path a things I've already tried when working through issues.
+
+
