@@ -38,6 +38,8 @@ app.use("/users", userController)
 app.use("/sessions", sessionController)
 app.use(express.static("public"))
 
+app.get("/", (req, res) => {res.redirect("/tenndr")})
+
 
 app.listen(PORT, () => {
     console.log("Stay Sexy Don't Get Murdered!")
