@@ -48,8 +48,9 @@
     <img src="/img/tenndr_logo.png" alt="logo" height="100px" width="200px" />
   </div>
   <h1>
-    <%=tenndr.workout%> Workout
-     Logged on: <%=tenndr.timestamps%>
+    <%=tenndr.workout%> Workout</br>
+     Logged on: <%=tenndr.createdAt.toString().slice(4,15)%>
+     <!-- credit stackoverflow on the time conversion to just show date  -->
   </h1>
   <div class="container">
     <div id="table-container">
