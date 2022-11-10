@@ -1,10 +1,10 @@
 # README
-#Tenndr: A Tracker for Selfcare
+##Tenndr: A Tracker for Selfcare
 
 **About the project**
 Tennder is an app that will help its users track a handful of postive habits that will help drive awareness of progress toward thier goals.  
 The project is planned to be built out in tiers starting with Fitness and mood tracking and prompted journaling after product market fit expaning to other modules like sleep tracking, meditation and goals around time spent working vs with self and family. 
-
+----
 **MVP Product Images**
 *Main Landing Page*
 ![preview Image](public/img/Home.png)
@@ -22,7 +22,7 @@ The project is planned to be built out in tiers starting with Fitness and mood t
 ![New Entry](public/img/new%20Entry.png)
 
 *Edit Entry*
-![Edit](public/img/edit.png)
+![EDIT](public/img/edit.png)
 
 *Indivdual Entry*
 ![show page](public/img/Indivdual%20Entry%20page.png)
@@ -30,16 +30,17 @@ The project is planned to be built out in tiers starting with Fitness and mood t
 *Delete*
 ![Deleted Page leads to dashboard](public/img/Delete.png)
 
+----
 
 **Technologies Used:**
 Javascript, CSS, EJS, Express, Node.js, Mongodb
-
+----
 **Getting Started:**
 Just a few simple steps to get going:
 Create an account
 Log in
 Begin tracking your workouts. 
-
+----
 **Roadmap**
 
 New Modules will be Mood Tracking and Journaling schemas
